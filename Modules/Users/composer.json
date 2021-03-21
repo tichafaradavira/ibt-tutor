@@ -1,0 +1,28 @@
+{
+    "name": "modules/users",
+    "description": "The users module to the ibt tutoring system",
+    "authors": [
+        {
+            "name": "Tichafara Davira",
+            "email": "tichafaradavira@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Users\\Providers\\ModuleServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Users\\": "",
+            "Modules\\Users\\App\\": "app/",
+            "Modules\\Users\\Database\\Factories\\": "database/factories/",
+            "Modules\\Users\\Database\\Seeders\\": "database/seeders/"
+        }
+    }
+}

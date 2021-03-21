@@ -1,0 +1,26 @@
+{
+    "name": "modules/files",
+    "description": "The files module to the ibt tutoring system",
+    "authors": [
+        {
+            "name": "Tichafara Davira",
+            "email": "tichafaradavira@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Files\\Providers\\ModuleServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Files\\": "",
+            "Modules\\Files\\App\\": "app/"
+        }
+    }
+}

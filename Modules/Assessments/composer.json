@@ -1,0 +1,27 @@
+{
+    "name": "modules/assessments",
+    "description": "The assessments module to the ibt tutoring system",
+    "authors": [
+        {
+            "name": "Tichafara Davira",
+            "email": "tichafaradavira@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Assessments\\Providers\\ModuleServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Assessments\\": "app/",
+            "Modules\\Assessments\\Database\\Factories\\": "database/factories/",
+            "Modules\\Assessments\\Database\\Seeders\\": "database/seeders/"
+        }
+    }
+}

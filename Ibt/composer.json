@@ -1,0 +1,26 @@
+{
+    "name": "ibt/core",
+    "description": "The core module to the ibt system",
+    "authors": [
+        {
+            "name": "Tichafara Davira",
+            "email": "tichafaradavira@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ibt\\Core\\Providers\\IbtCoreServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Ibt\\Core\\": "",
+            "Ibt\\Core\\App\\": "app/"
+        }
+    }
+}

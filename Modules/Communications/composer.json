@@ -1,0 +1,26 @@
+{
+    "name": "modules/communications",
+    "description": "The communications module to the ibt tutoring system",
+    "authors": [
+        {
+            "name": "Tichafara Davira",
+            "email": "tichafaradavira@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Communications\\Providers\\ModuleServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Communications\\": "",
+            "Modules\\Communications\\App\\": "app/"
+        }
+    }
+}

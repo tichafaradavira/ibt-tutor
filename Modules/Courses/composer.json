@@ -1,0 +1,26 @@
+{
+    "name": "modules/courses",
+    "description": "The courses module to the ibt tutoring system",
+    "authors": [
+        {
+            "name": "Tichafara Davira",
+            "email": "tichafaradavira@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Courses\\Providers\\ModuleServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Courses\\": "",
+            "Modules\\Courses\\App\\": "app/"
+        }
+    }
+}

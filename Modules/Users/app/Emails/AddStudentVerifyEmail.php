@@ -1,0 +1,42 @@
+<?php
+
+namespace Modules\Users\Emails;
+
+use Illuminate\Mail\Mailable;
+use Illuminate\Queue\SerializesModels;
+use Modules\Users\Models\Student;
+use Modules\Users\Models\User;
+
+class  AddStudentVerifyEmail extends Mailable
+{
+    use SerializesModels;
+
+    protected $user;
+    protected $temporary_password;
+
+    /**
+     * Create a new message instance.
+     *
+     * @return void
+     */
+    public function __construct(Student $user, $temporary_password)
+    {
+        $this->user = $user;
+        $this->temporary_password = $temporary_password;
+    }
+
+    /**
+     * Build the message.
+     *
+     * @return $this
+     */
+    public function build()
+    {
+        return $this->from('admin@realtorparc.com')
+        ->with([
+            'user' =>$this->user,
+            'temporary_password' => $this->temporary_password
+        ])
+        ->markdown('users::emails.addstudentemail');
+    }
+}
